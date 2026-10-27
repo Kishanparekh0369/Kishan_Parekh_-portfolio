@@ -16,8 +16,8 @@ import Profiles from './components/Profiles/Profiles';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
-const LOADER_DURATION = 2600; // ms for 0 → 100
-const LOADER_HOLD = 500; // hold at 100% so user SEES 100% before exit
+const LOADER_DURATION = 1500; // ms for 0 → 100 (snappy & lightweight)
+const LOADER_HOLD = 300; // hold briefly at 100% before exit
 
 export default function App() {
   const [loading, setLoading] = useState(true);
