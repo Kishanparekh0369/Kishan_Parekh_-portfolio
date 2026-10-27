@@ -90,12 +90,13 @@ export default function About() {
                   <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>8.81 / 10 CGPA</div>
                 </div>
                 <div className="glass-panel highlight-card" style={{ padding: '1rem 1.2rem', borderRadius: '12px', borderLeft: '3px solid var(--warning-color)', textAlign: 'center' }}>
-                  <div className="highlight-value" style={{ fontFamily: 'var(--font-hud)', fontSize: '1.1rem', fontWeight: 800, color: 'var(--warning-color)' }}>Univ Topper</div>
-                  <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Rank 9 (Sem 5 - 9.17)</div>
+                  <div className="highlight-value" style={{ fontFamily: 'var(--font-hud)', fontSize: '1.1rem', fontWeight: 800, color: 'var(--warning-color)' }}>University Top 10 Achiever – BCA</div>
+                  <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Rank 9 – Semester 5 | GPA: 9.17/10</div>
+                  <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Rank 8 – Semester 6 | GPA: 9.25/10</div>
                 </div>
                 <div className="glass-panel highlight-card" style={{ padding: '1rem 1.2rem', borderRadius: '12px', borderLeft: '3px solid var(--success-color)', textAlign: 'center' }}>
                   <div className="highlight-value" style={{ fontFamily: 'var(--font-hud)', fontSize: '1.1rem', fontWeight: 800, color: 'var(--success-color)' }}>Research Intern</div>
-                  <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>AI Adaptive Exam System</div>
+                  <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>AI-Based Adaptive Online Examination and Student Performance Analysis System</div>
                 </div>
               </div>
 
