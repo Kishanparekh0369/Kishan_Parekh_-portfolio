@@ -283,6 +283,23 @@ export const SERVICES = [
 ];
 
 export const PROJECTS = [
+  
+{
+  title: "Sports Club Management System",
+  img: "projects/foot.png",
+  alt: "Sports Club Management System",
+  tech: ["MongoDB", "Express.js", "React.js", "Node.js", "Bootstrap"],
+  desc: "A full-stack Sports Club Management System built using the MERN Stack, featuring user authentication, slot booking, event management, and an admin dashboard. Includes secure REST APIs and a responsive React.js frontend.",
+  links: [
+    {
+      label: "View Source",
+      icon: "fab fa-github",
+      href: "https://github.com/Kishanparekh0369/Sports-Club-Management-System.git",
+      variant: "btn-outline",
+    },
+  ],
+},
+
   {
     title: "Library Management System",
     img: "projects/OIP1.jpg",
@@ -298,9 +315,10 @@ export const PROJECTS = [
       },
     ],
   },
+  
   {
     title: "Portfolio Website",
-    img: "projects/p.jpg",
+    img: "projects/myp.jpeg",
     alt: "Portfolio Website",
     tech: ["React.js", "JavaScript", "HTML", "CSS", "Bootstrap"],
     desc: "A responsive personal portfolio website built with React.js, showcasing my skills, projects, achievements, and contact information with a modern user interface.",
@@ -319,7 +337,6 @@ export const PROJECTS = [
       },
     ],
   },
-  ,
   {
     title: "Hair & Care Studio",
     img: "projects/hc.jpg",
