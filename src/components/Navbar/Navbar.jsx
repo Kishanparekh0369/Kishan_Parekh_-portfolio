@@ -20,7 +20,7 @@ export default function Navbar() {
       document.body.style.overflow = '';
       document.removeEventListener('keydown', onKey);
     };
-  }, [open ]);
+  }, [open]);
 
   return (
     <>
@@ -30,22 +30,37 @@ export default function Navbar() {
         onClick={() => setOpen(false)}
         aria-hidden="true"
       />
-      <nav className={`navbar${scrolled ? ' scrolled' : ''}`} aria-label="Primary">
+      <nav className={`navbar${scrolled ? ' scrolled' : ''}`} aria-label="Primary Navigation">
         <div className="container navbar-content">
           <a href="#home" className="logo" onClick={() => setOpen(false)}>
             Kishan <span className="title-accent">Parekh</span>
           </a>
 
-          <button
-            className={`mobile-menu-btn${open ? ' open' : ''}`}
-            aria-label={open ? 'Close menu' : 'Open menu'}
-            aria-expanded={open}
-            onClick={() => setOpen((v) => !v)}
-          >
-            <span className="bar" aria-hidden="true" />
-          </button>
+          <div className="nav-controls">
+            <button
+              className="theme-toggle mobile-theme-btn"
+              aria-label={theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme'}
+              title={theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme'}
+              onClick={toggle}
+            >
+              <i className={theme === 'light' ? 'fas fa-sun' : 'fas fa-moon'} aria-hidden="true" />
+            </button>
 
-          <ul className={`nav-links${open ? ' active' : ''}`}>
+            <button
+              className={`mobile-menu-btn${open ? ' open' : ''}`}
+              aria-label={open ? 'Close navigation menu' : 'Open navigation menu'}
+              aria-expanded={open}
+              aria-controls="primaryNavLinks"
+              onClick={() => setOpen((v) => !v)}
+            >
+              <span className="bar" aria-hidden="true" />
+            </button>
+          </div>
+
+          <ul className={`nav-links${open ? ' active' : ''}`} id="primaryNavLinks">
+            <li className="nav-drawer-brand">
+              <span className="drawer-title">Navigation</span>
+            </li>
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <a
@@ -57,11 +72,12 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
-            <li>
+            <li className="nav-theme-item">
               <button
-                className="theme-toggle"
+                className="theme-toggle desktop-theme-btn"
                 id="themeToggle"
                 aria-label={theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme'}
+                title={theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme'}
                 onClick={() => {
                   toggle();
                   setOpen(false);
