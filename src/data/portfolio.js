@@ -313,6 +313,13 @@ export const PROJECTS = [
         href: "https://github.com/Kishanparekh0369/Library-Management-System",
         variant: "btn-outline",
       },
+      {
+        label: "Live Demo",
+        icon: "fas fa-play",
+        href: "https://smart-library-management.infinityfree.me/Student/Home.php",
+        variant: "btn-primary",
+      },
+
     ],
   },
   
